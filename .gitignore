@@ -1,0 +1,14 @@
+# media folders
+/wp-content/blogs.dir/*
+/wp-content/upgrade/*
+/wp-content/uploads/*
+
+.htaccess
+wp-config.php
+
+.sutunam/base_domain
+node_modules/
+
+## Cache
+wp-content/cache/
+wp-content/w3tc-config/
