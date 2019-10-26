@@ -77,12 +77,11 @@ git config --global user.name "Your Name"
 ```
 cd public_html
 sed -i 's/wordpress-installer-pack.local/your-domain.com/g' .backups/wordpress_installer_pack.sql
-git clone git@github.com:gledonne-sutunam/wordpress-installer-pack.git
-git config --global user.email "your-name@email.com"
-git config --global user.name "Your Name"
+mysql -h HOST -u USER -p DB_NAME < .backups/wordpress_installer_pack.sql
 ```
-<br />
+
 Don't forget to update the file wp-config.php with your own database informations :<br />
+
 ```
 define( 'DB_NAME', 'wordpress_installer_pack' );
 define( 'DB_USER', 'root' );
