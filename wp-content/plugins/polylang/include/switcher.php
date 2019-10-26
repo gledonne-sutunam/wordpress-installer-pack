@@ -195,7 +195,7 @@ class PLL_Switcher {
 
 			// Accept only few valid characters for the urls_x variable name ( as the widget id includes '-' which is invalid )
 			$out .= sprintf(
-				'<script>
+				'<script type="text/javascript">
 					//<![CDATA[
 					var %1$s = %2$s;
 					document.getElementById( "%3$s" ).onchange = function() {

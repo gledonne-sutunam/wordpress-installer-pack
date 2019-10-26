@@ -73,7 +73,7 @@ class PLL_Settings_Browser extends PLL_Settings_Module {
 		$deactivated = sprintf( '<span class="deactivated">%s</span>', $this->action_links['deactivated'] );
 
 		?>
-		<script>
+		<script type='text/javascript'>
 			//<![CDATA[
 			( function( $ ){
 				$( "input[name='force_lang']" ).change( function() {

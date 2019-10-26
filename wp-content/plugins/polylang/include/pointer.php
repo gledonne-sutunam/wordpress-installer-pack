@@ -108,6 +108,6 @@ class PLL_Pointer {
 			empty( $this->args['width'] ) ? '' : sprintf( 'pointerWidth: %d,', $this->args['width'] ),
 			empty( $b ) ? '' : $b
 		);
-		echo '<script>' . $js . '</script>'; // phpcs:ignore WordPress.Security.EscapeOutput
+		echo '<script type="text/javascript">' . $js . '</script>'; // phpcs:ignore WordPress.Security.EscapeOutput
 	}
 }

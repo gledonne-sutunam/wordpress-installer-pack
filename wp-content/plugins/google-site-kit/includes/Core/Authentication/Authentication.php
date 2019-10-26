@@ -192,6 +192,31 @@ final class Authentication {
 		);
 
 		add_action(
+			'admin_notices',
+			function() {
+				$creds = $this->credentials->get();
+				if ( ! empty( $creds['oauth2_client_id'] ) && false !== strpos( $creds['oauth2_client_id'], 'apps.sitekit.withgoogle.com' ) ) {
+					$this->credentials->set( array() );
+					?>
+					<div class="notice notice-info is-dismissible">
+						<p>
+							<?php esc_html_e( 'If you upgraded earlier today to 1.0.0-rc.1 and successfully generated credentials via the Site Kit authentication service, you will need to go through the onboarding process again.', 'google-site-kit' ); ?>
+						</p>
+						<p>
+							<?php esc_html_e( 'Some site owners reported with generating credentials via the Site Kit authentication service, which prevented them from completing the setup flow. While we are working on a fix for the authentication service, this version (1.0.0-rc.1.1) will revert to the previous mechanism of generating credentials and enable everyone to use the plugin again.', 'google-site-kit' ); ?>
+						</p>
+						<p>
+							<?php esc_html_e( 'Thanks for your understanding while we work on a fix.', 'google-site-kit' ); ?>
+							🙇🏻‍♀️
+							🙇‍♂️
+						</p>
+					</div>
+					<?php
+				}
+			}
+		);
+
+		add_action(
 			'wp_login',
 			function() {
 				$this->refresh_auth_token_on_login();

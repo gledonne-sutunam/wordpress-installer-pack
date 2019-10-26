@@ -156,7 +156,7 @@ class PLL_Lingotek {
 	 */
 	public function print_css() {
 		?>
-		<style>
+		<style type="text/css">
 		.ltk-feature {
 			text-align: left;
 			float: left;

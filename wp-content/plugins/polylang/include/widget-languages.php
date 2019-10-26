@@ -125,7 +125,7 @@ class PLL_Widget_Languages extends WP_Widget {
 
 		$done = true;
 		?>
-		<script>
+		<script type='text/javascript'>
 			//<![CDATA[
 			jQuery( document ).ready( function( $ ) {
 				function pll_toggle( a, test ) {

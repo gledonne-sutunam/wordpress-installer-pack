@@ -3,7 +3,7 @@ Contributors: webcraftic, ashdurham
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=VDX7JNTQPNPFW
 Tags: simple 301 redirects, bulk upload, csv, 301, redirects
 Requires at least: 3.0.1
-Tested up to: 4.9.6
+Tested up to: 5.0.0
 Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,7 +43,7 @@ We invite you to check out a few other related free plugins that our team has al
 * [Hide login page](https://wordpress.org/plugins/hide-login-page/ "Hide login page")
 * [Disable updates, Disable automatic updates, Updates manager](https://wordpress.org/plugins/webcraftic-updates-manager/)
 * [WordPress Assets manager, dequeue scripts, dequeue styles](https://wordpress.org/plugins/gonzales/  "WordPress Assets manager, dequeue scripts, dequeue styles")
-
+* [Robin image optimizer — save money on image compression](https://wordpress.org/plugins/robin-image-optimizer/  "Robin image optimizer — save money on image compression")
 
 == Installation ==
 
@@ -76,6 +76,12 @@ Have a question thats not listed? Get support either on the support forums here 
 --
 
 == Changelog ==
+= 1.2.5 =
+* Fixing vulnerabilities
+
+= 1.2.4 =
+* Compatible with Wordpress 5.0
+
 = 1.2.3 =
 * Fix some bugs
 

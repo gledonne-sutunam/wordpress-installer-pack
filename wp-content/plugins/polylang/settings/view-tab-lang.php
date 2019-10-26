@@ -180,7 +180,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	</div><!-- col-left -->
 </div><!-- col-container -->
 
-<script>
+<script type="text/javascript">
 	//<![CDATA[
 	jQuery( document ).ready( function( $ ) {
 		// close postboxes that should be closed
