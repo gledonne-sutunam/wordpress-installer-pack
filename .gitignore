@@ -3,8 +3,12 @@
 /wp-content/upgrade/*
 /wp-content/uploads/*
 
-.htaccess
-wp-config.php
+#.htaccess
+wp-content/plugins/admin-menu-editor/includes/.htaccess
+wp-content/plugins/oauth2-provider/library/keys/.htaccess
+wp-content/plugins/akismet/.htaccess
+
+#wp-config.php
 
 ## Cache
 wp-content/cache/

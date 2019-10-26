@@ -59,7 +59,7 @@ Git repository : https://github.com/gledonne-sutunam/wordpress-installer-pack<br
 - There is no compiler as GULP installed yet.</br>
 
 ## Admin
-- wp-admin
+- /wp-admin
 - User : gledonne@sutunam.com
 - Password : gledonne-sutunam<br /><br />
 Please remove this user after creating your own.<br />
@@ -80,10 +80,20 @@ sed -i 's/wordpress-installer-pack.local/your-domain.com/g' .backups/wordpress_i
 mysql -h HOST -u USER -p DB_NAME < .backups/wordpress_installer_pack.sql
 ```
 
-Don't forget to update the file wp-config.php with your own database informations :<br />
+Update the file wp-config.php with your own database informations :<br />
 
 ```
 define( 'DB_NAME', 'wordpress_installer_pack' );
 define( 'DB_USER', 'root' );
 define( 'DB_PASSWORD', '' );
 ```
+
+Don't forget to add wp-config and .htaccess in your gitignore :<br />
+
+```
+.htaccess
+wp-config.php
+```
+
+Then reset your permalinks from admin :<br />
+/wp-admin/options-permalink.php
